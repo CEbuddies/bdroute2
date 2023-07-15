@@ -7,11 +7,14 @@ if __name__ == '__main__':
 
     st.text('Do the math and tell me the result')
 
-    num_eq = st.number_input('Result: ')
+
+    if 'num_eq' not in st.session_state:
+        st.session_state.num_eq = 0
+    st.session_state.num_eq = st.number_input('Result: ')
 
     
 
-    if num_eq == 1896:
+    if st.session_state.num_eq == 1896:
         
 
 
@@ -19,9 +22,12 @@ if __name__ == '__main__':
 
         st.text('Find the numbers that are not arabic and sum them up to get the next hint.')
 
-        num = st.number_input('Your number is: ')
+        if 'num' not in st.session_state:
+            st.session_state.num = 0
+            
+        st.session_state.num = st.number_input('Your number is: ')
 
-        if num == 14:
+        if st.session_state.num == 14:
 
             st.text('Seek the Alter Simon and ask the bartender for advice.')
             st.text('Your codeword is: Herrengedeck')
