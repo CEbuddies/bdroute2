@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
         num = st.number_input('Your number is: ')
 
-        if num == 10:
+        if num == 14:
 
             st.text('Seek the Alter Simon and ask the bartender for advice.')
             st.text('Your codeword is: Herrengedeck')
