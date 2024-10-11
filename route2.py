@@ -5,7 +5,7 @@ if __name__ == '__main__':
     st.text('I am the everlasting memory of unthinkable horror.\nWhat I am telling you is more than 100 years in the past!\n')
     st.text('Do not know where I am? Look where this city has its garden ;)')
 
-    st.text('Do the math and tell me the result')
+    st.text('Shit your pants and tell me the result')
 
 
     if 'num_eq' not in st.session_state:
